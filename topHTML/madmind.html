@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../topCSS/madmind.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../topJS/madmind.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.17/dist/sweetalert2.min.css">
+    <title>Tops</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../html/tops.html">TOPS</a></li>
+                            <li><a class="dropdown-item" href="../html/bottom.html">BOTTOM</a></li>
+                            <li><a class="dropdown-item" href="#">OUTERWEAR</a></li>
+                            <li><a class="dropdown-item" href="#">ACCESSARIES</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/AboutUs.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Policy.html">Đổi trả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Cart.html">Giỏ hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Cart.html">Giỏ hàng</a>
+                    </li>
+                    <li>
+                        <input type="text" id="welcome" disabled style="margin-top: 10px;color: white;background-color: black;border-radius: 5px;">
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item" style="text-align: right; margin-left: 100px;">
+                        <a class="nav-link" href="#" id="userIcon" >
+                            <i class="fa-solid fa-circle-user fa-flip-horizontal fa-2xl" style="color: #000000; font-size: 50px; margin-top: 5px;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="history ">
+            <ul>
+                <li><a href="../html/index.html" id="home">Trang chủ</a></li>
+                <li>/</li>
+                <li><a href="../html/tops.html" id="tops">Tops</a></li>
+                <li>/</li>
+                <li><a href="../html/madmind.html" id="mad">MadMind</a></li>
+
+            </ul>
+        </div>
+        <div class="content" style="margin-top: 20px;">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-6" style="margin-left:0 auto;margin-right: 100px; ">                 
+                        <div class="img-container1" class="">
+                            <img id="mainImg" src="../img/a4.jpg" class="img-fluid main-img" style="height: 500px; width: 100%;">
+                        </div>
+                        <div class="thumbnail col-12">
+                            <img src="../img/a4.jpg" class="img-fluid thumbnail-img" onclick="changeImage('../img/a4.jpg')" style="width: 100px; height: 100px; object-fit: cover;">
+                            <img src="../img/a41.jpg" class="img-fluid thumbnail-img" onclick="changeImage('../img/a41.jpg')" style="width: 100px; height: 100px; object-fit: cover;">
+                            <img src="../img/a42.jpg" class="img-fluid thumbnail-img" onclick="changeImage('../img/a42.jpg')" style="width: 100px; height: 100px; object-fit: cover;">
+                            <img src="../img/a43.jpg" class="img-fluid thumbnail-img" onclick="changeImage('../img/a43.jpg')" style="width: 100px; height: 100px; object-fit: cover;">
+                        </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-5">
+                    <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Bomber Jacket MadMind</h2>
+                    <h3>Price: 420.000 VND</h3>
+                    <h4 >Color: Black</h3>
+                    <h5>Size:</h4>
+                    <div class="size">
+                        <ul>
+                            <li><button class="chooseSize" data-size="S">S</button></li>
+                            <li><button class="chooseSize" data-size="M">M</button></li>
+                            <li><button class="chooseSize" data-size="L">L</button></li>
+                            <li><button class="chooseSize" data-size="XL">XL</button></li>
+                            <li><button disabled>XXL</button></li>
+                        </ul>
+                    </div>
+                    <div class="quantity" style="margin-top: 20px; ">
+                        <h5>Quantity:</h5>
+                        <div class="quantity2">
+                            <button id="giam">-</button>
+                            <input type="number" name="" id="quantityNumber" value="1" min="1" readonly class="col-2 " style="text-align: center;">
+                            <button id="tang">+</button>
+                        </div>
+                    </div>
+                    <div class="themVaoGio col-12" style="margin-top: 30px;">
+                        <button style="text-align: center;width: 50%;height: 50px; font-weight: 500;">Thêm Vào Giỏ Hàng</button>
+                    </div>
+                    <h5 style="margin-top: 30px;">Description:</h5>
+                    <div class="moTa" style="margin-top: 30px;">
+                        <p>Modal: Height: 170 cm - Weight: 66 kg</p>
+                        <p>Jacket The Bad God 2 Years - Size M</p>
+                        <p>Lưu ý: Form áo boxy nên có thể chênh lệch 1-2 cm</p>
+                    </div>
+                </div>
+        </div>
+        <div class="other" style="margin-top: 60px;">
+            <h2 style="text-align: center;font-weight: bolder;">-- Sản phẩm khác --</h2>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="../topHTML/destruction.html">
+                        <div class="img-container2"></div>
+                    </a>
+                    <a href="../topHTML/destruction.html" style="text-decoration: none; margin-left: 70px;color: #000000;" id="jacket">Leather Jacket Short Destruction</a>
+                    <p style="margin-left: 120px;">640.000VND</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="">
+                        <div class="img-container3"></div>
+                    </a>
+                    <a href="" style="text-decoration: none; margin-left: 120px;color: #000000;" id="Jersey">Jersey AB House</a>
+                    <p style="margin-left: 130px;">174.000VND</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="../topHTML/thebadgod.html">
+                        <div class="img-container4"></div>
+                    </a>
+                    <a href="../topHTML/thebadgod.html" style="text-decoration: none; margin-left: 70px;color: #000000;" id="jacket">Jacket The Bad God 2 Years</a>
+                    <p style="margin-left: 120px;">830.000VND</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="../topHTML/MDSDG.html">
+                        <div class="img-container5">
+                        </div>
+                    </a>
+                    <a href="../topHTML/MDSDG.html" style="text-decoration: none; margin-left: 70px;color: #000000;" id="jacket">Leather Jacket MDSDG</a>
+                    <p style="margin-left: 120px;">740.000VND</p>
+                </div>
+              
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerL">
+                <h1>Mạng xã hội</h1>
+                <br>
+                <a href="https://www.facebook.com/khanh.min.33/"><i class="fa-brands fa-facebook" style="color: #000000;font-size: 50px;"></i></a>
+                <a href="https://www.instagram.com/khanhduong_1104/"><i class="fa-brands fa-instagram" style="color: #000000;font-size: 50px;"></i></a>
+                <a href="https://www.tiktok.com/@thekhanh1104"><i class="fa-brands fa-tiktok" style="color: #000000;font-size: 50px;"></i></a>
+            </div>
+            <div class="footerR">
+                <img src="../img/logo1.jpg" alt="">
+            </div>
+        </div>
+        <div class="end" style="text-align: center;">
+            <p>Copyright © 2024 TK Dio. Powered by DTK</p>
+            <p>Founder: Dương Thế Khánh</p>
+        </div>
+        <!-- Modal Login -->
+        <div class="modal fade" id="LoginModal" role="dialog" style="border-radius: 100px;border-width: 1px;border-color: white;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: black;">
+                        <h1 style="text-align: center; margin-left: 120px; color: white; font-weight: 600;">ĐĂNG NHẬP</h1>
+                        <button class="btn btn-close" data-bs-toggle="modal"></button>
+                    </div>
+                    <div class="modal-body" style="background-color: black;">
+                        <table class="table" style= >
+                            <tr style="margin-left: 50px;">
+                                <td  style="background-color: black;">
+                                    <div class="user" style="text-align: center;" >
+                                        <span class="fa fa-solid fa-user" style="color: white;">:</span>   
+                                        <input type="text" placeholder="Username" id="user">
+                                    </div>                                  
+                                    <div class="password" style="text-align: center;margin-top: 20px;">
+                                        <span class="fa fa-solid fa-lock" style="color: white;">:</span>   
+                                        <input type="password" placeholder="Password" id="password">  
+                                    </div>
+                                    <div style="display: flex; margin-top: 30px;">
+                                        <div class="right" style="flex: 1;">
+                                            <a href="#"style="color: white;">Đăng kí</a>
+                                        </div>
+                                        <div class="left">
+                                            <a href="#" style="color: white;">Quên mật khẩu?</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <h1 style="text-align: center;color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">- TK DIO -</h1>
+                    </div>
+                    <div class="modal-footer" style="background-color: black;">
+                        <button type="submit" class="Login btn btn-light">Đăng nhập</button>
+                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                        <button type="reset" class="btn btn-light" data-bs-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--Đây là modal của Của user sau khi đăng nhập thành công -->
+         <div class="modal fade" id="userModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: black;">
+                        <h1 style="color: white;">Welcome to TK DIO</h1>
+                    </div>
+                    <div class="modal-body" style="background-color: black;">
+                        <table class="table">
+                            <tr>
+                                <th style="background-color: black; color: white;">
+                                    <label for="">Tên User:</label>
+                                </th>
+                                <td style="background-color: black;">
+                                    <input type="text" id="UserIn" disabled style="background-color: white;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="background-color: black; color:white;">
+                                    <label for="">Thời gian đăng nhập:</label>
+                                </th>
+                                <td style="background-color: black;">
+                                    <input type="datetime" name="" id="time" disabled style="background-color: white;">
+                                </td>
+                            </tr>
+                        </table>
+                        <h1 style="text-align: center;color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">- TK DIO -</h1>
+                    </div>
+                    <div class="modal-footer" style="background-color: black;">
+                        <button type="submit" class="Logout btn btn-light">Đăng xuất</button>
+                        <button type="reset" class="btn btn-light" data-bs-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

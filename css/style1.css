@@ -1,0 +1,101 @@
+.container-fluid
+{
+    padding: 0 auto;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    background-image: url('../img/logo.jpg');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+.navbar.sticky-top{
+    top: 0;
+}
+.collapse
+{
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: 5px; 
+    border-color: rgba(224,224, 224, 0.3); 
+}
+.collapse ul li
+{
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 25px;
+}
+.nav-item a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+    font-weight: 600;
+}
+.nav-item ul li a{
+    color: white;
+}
+.nav-item ul  {
+    background-color: black;
+}
+.img{
+    margin-top: 80px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; 
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+.img:hover
+{
+    background-image: url('../img/k1.jpg');
+}
+.img a button{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    transition: transform 0.4s ease;
+}
+.img a button:hover{
+    background-color:black;
+    color: white;
+    transform: scale(1.8);
+    text-transform: uppercase;
+}
+.footer{
+display: flex;
+}
+
+.footerL
+{
+    flex: 1;
+    border-style: solid;
+    border-width: 2px; /* Độ dày của viền */
+    border-color: rgba(224,224, 224, 0.3); /* Màu viền với độ trong suốt */
+    text-align: center;
+}
+.footerL h1{
+    font-size: 200%;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.footerL a{
+    margin-right: 40px;
+}
+.footerR
+{
+    flex:1;
+    border-style: solid;
+    border-width: 2px; /* Độ dày của viền */
+    border-color: rgba(224,224, 224, 0.3); /* Màu viền với độ trong suốt */
+}
+.footer img
+{
+    width: 100%;
+    height: 220px;
+}

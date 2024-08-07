@@ -1,0 +1,223 @@
+.container-fluid
+{
+    padding: 0 auto;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    background-image: url('../img/logo.jpg');
+    background-size: contain; /* Đảm bảo hình ảnh hiển thị đầy đủ mà không bị phóng to */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    background-position: center; /* Căn giữa hình ảnh trong phần tử chứa */
+}
+.navbar.sticky-top{
+    top:0px;
+}
+.collapse
+{
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: 5px; 
+    border-color: rgba(224,224, 224, 0.3); 
+}
+.collapse ul li
+{
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 25px;
+}
+.nav-item a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+    font-weight: 600;
+}
+.nav-item ul li a{
+    color: white;
+}
+.nav-item ul  {
+    background-color: black;
+}
+.history
+{
+    height: 40px;
+    border: 2px ;
+    border-style: solid;
+    border-width: 2px; 
+    border-color: rgba(224,224, 224, 0.3); 
+}
+.history ul li
+{
+    display: inline-block;
+}
+.history ul li a
+{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+.history ul li a:hover
+{
+    text-transform: uppercase;
+    color: grey
+}
+#home
+{
+    margin-left: auto;
+}
+.footer{
+    display: flex;
+}
+
+.footerL
+{
+    flex: 1;
+    border-style: solid;
+    border-width: 2px; /* Độ dày của viền */
+    border-color: rgba(224,224, 224, 0.3); /* Màu viền với độ trong suốt */
+    text-align: center;
+}
+.footerL h1{
+    font-size: 200%;
+    font-weight: 500;
+    margin-top: 15px;
+}
+.footerL a{
+    margin-right: 40px;
+}
+.footerR
+{
+    flex:1;
+    border-style: solid;
+    border-width: 2px; 
+    border-color: rgba(224,224, 224, 0.3);
+}
+.footer img
+{
+    width: 100%;
+    height: 220px;
+}
+.main-img {
+    display: block; 
+    margin-left: auto; 
+    object-fit: cover;
+    border:solid rgba(224,224, 224, 0.3);;
+}
+.thumbnail-img {
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 50px;
+    border:solid rgba(224,224, 224, 0.3);;
+    margin-bottom: 20px;
+
+}
+.thumbnail-img:hover {
+    border: 2px dashed black;
+}
+.size{
+    margin-top: 10px;
+}
+.size ul li{
+    display: inline-block;
+    margin-left: 25px;
+}
+.size ul li button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.quantity2{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.quantity2 button{
+    padding: 1px 15px;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: white;
+}
+.themVaoGio button{
+    background-color: white;
+    transition: background-colur 1.0s ease;
+    color: black;
+}
+.themVaoGio button:hover{
+    background-color: black;
+    color: white;
+}
+.img-container2{
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; 
+    background-image: url('../img/a12.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+.img-container2:hover
+{
+    background-image: url('../img/a1.jpg');
+    transform: scale(1.1);
+}
+.img-container3{
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; 
+    background-image: url('../img/a3.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+.img-container3:hover
+{
+    background-image: url('../img/a31.jpg');
+    transform: scale(1.1);
+}
+.img-container4{
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; 
+    background-image: url('../img/a4.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+.img-container4:hover
+{
+    background-image: url('../img/a41.jpg');
+    transform: scale(1.1);
+}
+.img-container5{
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; 
+    background-image: url('../img/a5.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+.img-container5:hover
+{
+    background-image: url('../img/a51.jpg');
+    transform: scale(1.1);
+}
+.chooseSize {
+    border: 1px solid #ccc;
+    background-color: white;
+    color:black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.chooseSize.selected {
+    background-color:black;
+    color: white;
+}
+
+
+
+
+
+
